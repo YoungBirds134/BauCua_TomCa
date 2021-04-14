@@ -157,7 +157,7 @@ namespace BauCua_TomCa
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (Kt_so(txt_0.Text) == true) {
+            if (kt_TextBox(txt_0.Text) == true) {
                 MessageBox.Show("Dung");
             }
             else
@@ -178,5 +178,17 @@ namespace BauCua_TomCa
 
 
         //public static bool kt_TextBo
+
+        public static bool kt_TextBox(string pText) {
+            foreach (char item in pText)
+            {
+                if (char.IsLetter(item))
+                {
+                    return false;
+                    break;
+                }
+            }
+            return true;
+        }
     }
 }
