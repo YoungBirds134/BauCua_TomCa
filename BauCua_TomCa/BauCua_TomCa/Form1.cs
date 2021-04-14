@@ -5,8 +5,10 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace BauCua_TomCa
 {
@@ -138,6 +140,43 @@ namespace BauCua_TomCa
                 txt_tienchoi.Text = tienchoi.ToString();           
             }           
         }
-        
+
+
+
+        public static bool Kt_so(string pText) {
+            Regex regex = null;
+            try
+            {
+                regex = new Regex(@"^[-+]?[0-9]*\.?[0-9]+$"); return regex.IsMatch(pText);
+            }
+            catch 
+            {
+                return regex.IsMatch(pText);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (Kt_so(txt_0.Text) == true) {
+                MessageBox.Show("Dung");
+            }
+            else
+            {
+                MessageBox.Show("Sai");
+            }
+        }
+
+        public static int kt_tienHienCo( int tienCo) {
+            
+            return tienCo  ;
+        }
+
+
+        public static int TienCuoc(int tienCuoc) {
+            return tienCuoc;
+        }
+
+
+        //public static bool kt_TextBo
     }
 }
