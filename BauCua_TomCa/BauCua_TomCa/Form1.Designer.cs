@@ -64,7 +64,7 @@ namespace BauCua_TomCa
             // btn_choigame
             // 
             this.btn_choigame.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_choigame.Location = new System.Drawing.Point(812, 379);
+            this.btn_choigame.Location = new System.Drawing.Point(807, 354);
             this.btn_choigame.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btn_choigame.Name = "btn_choigame";
             this.btn_choigame.Size = new System.Drawing.Size(143, 42);

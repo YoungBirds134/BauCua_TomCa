@@ -252,6 +252,7 @@ namespace BauCua_TomCa
 
         private void txt_tienchoi_TextChanged(object sender, EventArgs e)
         {
+           
             if (kiemTra_tienHienCo(double.Parse(txt_tienchoi.Text)) == false)
             {
                 MessageBox.Show("Tiền Cược Phải Có");
@@ -279,5 +280,7 @@ namespace BauCua_TomCa
 
             return false;
         }
+
+      
     }
 }
