@@ -16,3 +16,11 @@ D:\Game_C#\BauCua_TomCa\BauCua_TomCa\BauCua_TomCa\obj\Debug\BauCua_TomCa.csproj.
 \\vmware-host\Shared Folders\Downloads\BauCua_TomCa\BauCua_TomCa\BauCua_TomCa\obj\Debug\BauCua_TomCa.Form1.resources
 \\vmware-host\Shared Folders\Downloads\BauCua_TomCa\BauCua_TomCa\BauCua_TomCa\obj\Debug\BauCua_TomCa.Properties.Resources.resources
 \\vmware-host\Shared Folders\Downloads\BauCua_TomCa\BauCua_TomCa\BauCua_TomCa\obj\Debug\BauCua_TomCa.csproj.GenerateResource.Cache
+C:\Users\Huy\Desktop\Git\BauCua_TomCa\BauCua_TomCa\BauCua_TomCa\bin\Debug\BauCua_TomCa.exe.config
+C:\Users\Huy\Desktop\Git\BauCua_TomCa\BauCua_TomCa\BauCua_TomCa\obj\Debug\BauCua_TomCa.exe
+C:\Users\Huy\Desktop\Git\BauCua_TomCa\BauCua_TomCa\BauCua_TomCa\obj\Debug\BauCua_TomCa.pdb
+C:\Users\Huy\Desktop\Git\BauCua_TomCa\BauCua_TomCa\BauCua_TomCa\bin\Debug\BauCua_TomCa.exe
+C:\Users\Huy\Desktop\Git\BauCua_TomCa\BauCua_TomCa\BauCua_TomCa\bin\Debug\BauCua_TomCa.pdb
+C:\Users\Huy\Desktop\Git\BauCua_TomCa\BauCua_TomCa\BauCua_TomCa\obj\Debug\BauCua_TomCa.Form1.resources
+C:\Users\Huy\Desktop\Git\BauCua_TomCa\BauCua_TomCa\BauCua_TomCa\obj\Debug\BauCua_TomCa.Properties.Resources.resources
+C:\Users\Huy\Desktop\Git\BauCua_TomCa\BauCua_TomCa\BauCua_TomCa\obj\Debug\BauCua_TomCa.csproj.GenerateResource.Cache

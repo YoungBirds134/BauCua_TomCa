@@ -5,3 +5,10 @@
 \\vmware-host\Shared Folders\Downloads\BauCua_TomCa\BauCua_TomCa\UnitTest_Bau_Cua_Tom_Ca\obj\Debug\UnitTest_Bau_Cua_Tom_Ca.pdb
 \\vmware-host\Shared Folders\Downloads\BauCua_TomCa\BauCua_TomCa\UnitTest_Bau_Cua_Tom_Ca\bin\Debug\BauCua_TomCa.exe
 \\vmware-host\Shared Folders\Downloads\BauCua_TomCa\BauCua_TomCa\UnitTest_Bau_Cua_Tom_Ca\bin\Debug\BauCua_TomCa.pdb
+C:\Users\Huy\Desktop\Git\BauCua_TomCa\BauCua_TomCa\UnitTest_Bau_Cua_Tom_Ca\bin\Debug\UnitTest_Bau_Cua_Tom_Ca.dll
+C:\Users\Huy\Desktop\Git\BauCua_TomCa\BauCua_TomCa\UnitTest_Bau_Cua_Tom_Ca\bin\Debug\UnitTest_Bau_Cua_Tom_Ca.pdb
+C:\Users\Huy\Desktop\Git\BauCua_TomCa\BauCua_TomCa\UnitTest_Bau_Cua_Tom_Ca\bin\Debug\BauCua_TomCa.exe
+C:\Users\Huy\Desktop\Git\BauCua_TomCa\BauCua_TomCa\UnitTest_Bau_Cua_Tom_Ca\bin\Debug\BauCua_TomCa.pdb
+C:\Users\Huy\Desktop\Git\BauCua_TomCa\BauCua_TomCa\UnitTest_Bau_Cua_Tom_Ca\obj\Debug\UnitTest_Bau_Cua_Tom_Ca.csprojResolveAssemblyReference.cache
+C:\Users\Huy\Desktop\Git\BauCua_TomCa\BauCua_TomCa\UnitTest_Bau_Cua_Tom_Ca\obj\Debug\UnitTest_Bau_Cua_Tom_Ca.dll
+C:\Users\Huy\Desktop\Git\BauCua_TomCa\BauCua_TomCa\UnitTest_Bau_Cua_Tom_Ca\obj\Debug\UnitTest_Bau_Cua_Tom_Ca.pdb

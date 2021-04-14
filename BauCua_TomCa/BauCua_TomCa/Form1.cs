@@ -16,7 +16,7 @@ namespace BauCua_TomCa
     {
         public List<ConDat> DSCD = new List<ConDat>();//tạo các con đặt lưu vào DSCD
         public List<ConDat> DSKQ = new List<ConDat>();//lưu kết quả random condat vào DSKQ
-        public float tienchoi=500000;
+        public float tienchoi = 500000;
         public Form1()
         {
             InitializeComponent();
@@ -33,7 +33,7 @@ namespace BauCua_TomCa
             {
                 if (a.Ma == ma1)
                 {
-                    pic_kq_1.Image = Image.FromFile("HinhAnh/"+a.Hinhanh);//gán hình cho picture xí ngầu 1 là hình của a -- lưu ý file hình ảnh để trong debug
+                    pic_kq_1.Image = Image.FromFile("HinhAnh/" + a.Hinhanh);//gán hình cho picture xí ngầu 1 là hình của a -- lưu ý file hình ảnh để trong debug
                     DSKQ.Add(a);
                 }
                 if (a.Ma == ma2)
@@ -85,7 +85,7 @@ namespace BauCua_TomCa
                         MessageBox.Show("Bạn đã đánh trúng con cược " + tenConCuoc(b) + " với tiền thưởng là: " + (float.Parse(a.Text) * 2).ToString());
                     }
                 }
-            }            
+            }
         }
         public void clear()
         {
@@ -116,7 +116,7 @@ namespace BauCua_TomCa
         private void txt_1_Leave(object sender, EventArgs e)
         {
             float tiendat;
-            Control ctr=(Control) sender;
+            Control ctr = (Control)sender;
             if (ctr.GetType() == typeof(TextBox))
             {
                 TextBox a = (TextBox)ctr;
@@ -126,69 +126,158 @@ namespace BauCua_TomCa
                 }
                 else
                 {
-                    tiendat = float.Parse(a.Text);
-                    if (tienchoi >= tiendat)
+                    if (kiemTra_textboxChiNhapSo(a.Text) == true)
                     {
-                        tienchoi = tienchoi - tiendat;
+                        tiendat = float.Parse(a.Text);
+                        if (kiemTra_tienDatCuoc_lonHon_tienHienCo(tienchoi, tiendat) == true)
+                        {
+                            tienchoi = tienchoi - tiendat;
+                        }
+                        else
+                        {
+                            MessageBox.Show("Bạn không đủ tiền để đặt quá tiền chơi còn lại -- số tiền chơi còn lại: " + tienchoi.ToString());
+                            a.Clear();
+                        }
                     }
-                    else
-                    {
-                        MessageBox.Show("Bạn không đủ tiền để đặt quá tiền chơi còn lại -- số tiền chơi còn lại: " + tienchoi.ToString());
-                        a.Clear();
-                    }
-                }              
-                txt_tienchoi.Text = tienchoi.ToString();           
-            }           
-        }
 
 
-
-        public static bool Kt_so(string pText) {
-            Regex regex = null;
-            try
-            {
-                regex = new Regex(@"^[-+]?[0-9]*\.?[0-9]+$"); return regex.IsMatch(pText);
-            }
-            catch 
-            {
-                return regex.IsMatch(pText);
+                }
+                txt_tienchoi.Text = tienchoi.ToString();
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+
+
+
+
+
+
+
+
+
+
+
+        /// <summary>
+        /// //KIỂM TRA TEXT BOX CHỈ CHO NHẬP SỐ
+        /// </summary>
+        /// <param name="pText"></param>
+        /// <returns></returns>
+        public static bool kiemTra_textboxChiNhapSo(string pText)
         {
-            if (kt_TextBox(txt_0.Text) == true) {
-                MessageBox.Show("Dung");
+            if (pText == null)
+            {
+                return false;
             }
             else
             {
-                MessageBox.Show("Sai");
-            }
-        }
-
-        public static int kt_tienHienCo( int tienCo) {
-            
-            return tienCo  ;
-        }
-
-
-        public static int TienCuoc(int tienCuoc) {
-            return tienCuoc;
-        }
-
-
-        //public static bool kt_TextBo
-
-        public static bool kt_TextBox(string pText) {
-            foreach (char item in pText)
-            {
-                if (char.IsLetter(item))
+                foreach (char item in pText)
                 {
-                    return false;
-                    break;
+                    if (char.IsLetter(item))
+                    {
+                        return false;
+                        break;
+                    }
                 }
             }
+
             return true;
+        }
+
+
+
+        private void txt_0_TextChanged(object sender, EventArgs e)
+        {
+            if (kiemTra_textboxChiNhapSo(txt_0.Text) == false)
+            {
+                MessageBox.Show("Chỉ Nhập Số Thôi Bạn Ơi");
+            }
+        }
+
+        private void txt_1_TextChanged(object sender, EventArgs e)
+        {
+            if (kiemTra_textboxChiNhapSo(txt_1.Text) == false)
+            {
+                MessageBox.Show("Chỉ Nhập Số Thôi Bạn Ơi");
+            }
+        }
+
+        private void txt_2_TextChanged(object sender, EventArgs e)
+        {
+
+            if (kiemTra_textboxChiNhapSo(txt_2.Text) == false)
+            {
+                MessageBox.Show("Chỉ Nhập Số Thôi Bạn Ơi");
+            }
+        }
+
+        private void txt_3_TextChanged(object sender, EventArgs e)
+        {
+            if (kiemTra_textboxChiNhapSo(txt_3.Text) == false)
+            {
+                MessageBox.Show("Chỉ Nhập Số Thôi Bạn Ơi");
+            }
+        }
+
+        private void txt_4_TextChanged(object sender, EventArgs e)
+        {
+            if (kiemTra_textboxChiNhapSo(txt_4.Text) == false)
+            {
+                MessageBox.Show("Chỉ Nhập Số Thôi Bạn Ơi");
+            }
+        }
+
+        private void txt_5_TextChanged(object sender, EventArgs e)
+        {
+            if (kiemTra_textboxChiNhapSo(txt_5.Text) == false)
+            {
+                MessageBox.Show("Chỉ Nhập Số Thôi Bạn Ơi");
+            }
+        }
+
+
+        ///////////////KIỂM TRA TIỀN CƯỢC HIỆN CÓ
+        public static bool kiemTra_tienHienCo(double tienCuoc)
+        {
+
+            if (tienCuoc < 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        private void txt_tienchoi_TextChanged(object sender, EventArgs e)
+        {
+            if (kiemTra_tienHienCo(double.Parse(txt_tienchoi.Text)) == false)
+            {
+                MessageBox.Show("Tiền Cược Phải Có");
+            }
+        }
+
+
+
+        ///////////////KIỂM TRA TIỀN ĐẶT CƯỢC PHẢI LỚN HƠN TIỀN HIỆN CÓ
+
+        public static bool kiemTra_tienDatCuoc_lonHon_tienHienCo(float tienChoi, float tienDat)
+        {
+            if (tienChoi >= tienDat)
+            {
+                return true;
+            }
+            else if (tienChoi == 0 || tienDat == 0)
+            {
+                return false;
+            }
+            else if (tienChoi==0 && tienDat==0)
+            {
+                return false;
+            }
+
+            return false;
         }
     }
 }
