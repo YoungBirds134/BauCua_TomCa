@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BauCua_TomCa", "BauCua_TomCa\BauCua_TomCa.csproj", "{A8FA8E27-4921-48F3-8E2E-BDBCFCDB0488}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest_Bau_Cua_Tom_Ca", "UnitTest_Bau_Cua_Tom_Ca\UnitTest_Bau_Cua_Tom_Ca.csproj", "{66C111E8-017D-4F74-9017-4E572C2F3442}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +17,10 @@ Global
 		{A8FA8E27-4921-48F3-8E2E-BDBCFCDB0488}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8FA8E27-4921-48F3-8E2E-BDBCFCDB0488}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8FA8E27-4921-48F3-8E2E-BDBCFCDB0488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66C111E8-017D-4F74-9017-4E572C2F3442}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66C111E8-017D-4F74-9017-4E572C2F3442}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66C111E8-017D-4F74-9017-4E572C2F3442}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66C111E8-017D-4F74-9017-4E572C2F3442}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
